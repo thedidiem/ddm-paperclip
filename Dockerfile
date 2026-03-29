@@ -52,7 +52,7 @@ ENV NODE_ENV=production \
   PAPERCLIP_DEPLOYMENT_MODE=authenticated \
   PAPERCLIP_DEPLOYMENT_EXPOSURE=private
 
-VOLUME ["/paperclip"]
+## VOLUME removed — Railway manages volumes separately
 EXPOSE 3100
 
 USER node
